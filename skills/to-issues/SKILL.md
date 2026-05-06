@@ -1,19 +1,17 @@
 ---
 name: to-issues
-description: Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices. Use when user wants to convert a plan into issues, create implementation tickets, or break down work into issues.
+description: Break a plan, spec, or PRD into independently-grabbable issues and save them to the project's memory/ directory using tracer-bullet vertical slices. Use when user wants to convert a plan into issues, create implementation tickets, or break down work into issues.
 ---
 
 # To Issues
 
 Break a plan into independently-grabbable issues using vertical slices (tracer bullets).
 
-The issue tracker and triage label vocabulary should have been provided to you — run `/setup-matt-pocock-skills` if not.
-
 ## Process
 
 ### 1. Gather context
 
-Work from whatever is already in the conversation context. If the user passes an issue reference (issue number, URL, or path) as an argument, fetch it from the issue tracker and read its full body and comments.
+Work from whatever is already in the conversation context. If the user passes an issue reference, PRD path, markdown file, or memory/ document reference as an argument, read it fully.
 
 ### 2. Explore the codebase (optional)
 
@@ -49,16 +47,24 @@ Ask the user:
 
 Iterate until the user approves the breakdown.
 
-### 5. Publish the issues to the issue tracker
+### 5. Save the issues to the project's memory/ directory
 
-For each approved slice, publish a new issue to the issue tracker. Use the issue body template below. Apply the `needs-triage` triage label so each issue enters the normal triage flow.
+For each approved slice, save the issues into a markdown file inside the project's `memory/` directory.
 
-Publish issues in dependency order (blockers first) so you can reference real issue identifiers in the "Blocked by" field.
+Choose a concise, descriptive kebab-case filename that reflects the feature or initiative being described.
+
+Preferred filename format:
+
+`memory/<feature-name>-implementation-issues.md`
+
+Save issues in dependency order (blockers first) so dependency references remain clear.
+
+Use the issue body template below.
 
 <issue-template>
 ## Parent
 
-A reference to the parent issue on the issue tracker (if the source was an existing issue, otherwise omit this section).
+A reference to the parent PRD or source document in `memory/` (if the source was an existing document, otherwise omit this section).
 
 ## What to build
 
@@ -72,10 +78,10 @@ A concise description of this vertical slice. Describe the end-to-end behavior, 
 
 ## Blocked by
 
-- A reference to the blocking ticket (if any)
+- A reference to the blocking issue in this implementation plan (if any)
 
 Or "None - can start immediately" if no blockers.
 
 </issue-template>
 
-Do NOT close or modify any parent issue.
+Do NOT modify any parent PRD or source document.
