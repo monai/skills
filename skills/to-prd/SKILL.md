@@ -1,9 +1,11 @@
 ---
 name: to-prd
-description: Turn the current conversation context into a PRD and save it to the project's memory/ directory. Use when user wants to create a PRD from the current context.
+description: Turn the current conversation context into a PRD and publish it to the project issue tracker. Use when user wants to create a PRD from the current context.
 ---
 
 This skill takes the current conversation context and codebase understanding and produces a PRD. Do NOT interview the user — just synthesize what you already know.
+
+The issue tracker and triage label vocabulary should have been provided to you — run `/setup-matt-pocock-skills` if not.
 
 ## Process
 
@@ -15,16 +17,7 @@ A deep module (as opposed to a shallow module) is one which encapsulates a lot o
 
 Check with the user that these modules match their expectations. Check with the user which modules they want tests written for.
 
-3. Write the PRD using the template below, then save it as a markdown file inside the project's `memory/` directory.
-
-Choose a concise, descriptive kebab-case filename that reflects the feature or initiative being described. Prefer filenames in the format:
-
-`memory/<feature-name>-prd.md`
-
-Examples:
-- `memory/auth-session-hardening-prd.md`
-- `memory/editor-offline-mode-prd.md`
-- `memory/ai-review-workflow-prd.md`
+3. Write the PRD using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
 
 <prd-template>
 
@@ -61,6 +54,8 @@ A list of implementation decisions that were made. This can include:
 - Specific interactions
 
 Do NOT include specific file paths or code snippets. They may end up being outdated very quickly.
+
+Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts — not a working demo, just the important bits.
 
 ## Testing Decisions
 
