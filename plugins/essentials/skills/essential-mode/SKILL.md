@@ -1,6 +1,6 @@
 ---
 name: essential-mode
-description: Principles mode
+description: Essential mode
 disable-model-invocation: true
 ---
 
