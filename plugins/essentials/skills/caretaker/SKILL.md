@@ -27,9 +27,7 @@ Report the source changes for principle 1 and the unclear promises. Do not repor
 ### `<unit>` in `<path>`
 
 **Promise.** <one sentence>
-
 **Premise.** <one sentence>
-
 **Breaks on.** `<input>` gives `<wrong output>`.
 
 ```diff
@@ -37,6 +35,7 @@ Report the source changes for principle 1 and the unclear promises. Do not repor
 -<line before>
 +<line after>
 ```
+---
 ````
 
 For an unclear promise, write this entry instead:
@@ -53,9 +52,7 @@ Example:
 ### `parse` in `src/parse.py`
 
 **Promise.** `parse` returns no empty fields.
-
 **Premise.** Only a trailing empty field is dropped.
-
 **Breaks on.** `",a,b"` gives `["", "a", "b"]`.
 
 ```diff
@@ -67,6 +64,7 @@ Example:
 -    return [f for f in parse(line) if f]
 +    return parse(line)
 ```
+---
 ````
 
 ## Principles
