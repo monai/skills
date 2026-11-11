@@ -4,4 +4,8 @@ description: "Apply when you catch yourself writing the same instruction a secon
 disable-model-invocation: true
 ---
 
-Read `${CLAUDE_SKILL_DIR}/../essential-mode/principles/encode-lessons-in-structure.md` in full and apply it.
+# Encode Lessons in Structure
+
+If the lesson needs judgment and cannot be encoded, make the instruction more prominent and add an example of the failure mode.
+
+**Corollary:** If the fix is structural, only use the structural fix. The instruction is the symptom.

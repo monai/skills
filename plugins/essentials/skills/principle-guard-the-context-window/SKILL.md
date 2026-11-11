@@ -4,4 +4,9 @@ description: "Apply when context is filling up: large outputs, long files, repea
 disable-model-invocation: true
 ---
 
-Read `${CLAUDE_SKILL_DIR}/../essential-mode/principles/guard-the-context-window.md` in full and apply it.
+# Guard the Context Window
+
+**Why:** Context overflow degrades reasoning quality, creates compression artifacts, and halts progress.
+
+**Pattern:**
+- **Size phases and cap scope.** Limit files per phase, set turn budgets, account for mechanism costs.

@@ -46,7 +46,7 @@ Remaining triggers:
 
 ## Principles
 
-Read the leaf in full for any principle you apply. Each entry names when it applies. Each leaf is `principles/<title>.md` next to this file, with the title in kebab case, hyphens kept and other punctuation dropped, unless the entry gives its name.
+Read the leaf in full for any principle you apply. Each entry names when it applies. Each leaf is the bundled skill `principle-<title>`, with the title in kebab case, hyphens kept and other punctuation dropped, unless the entry gives its name.
 
 **Core**
 
