@@ -2,7 +2,7 @@
   "name": "clanker-janker",
   "owner": {
     "name": "monai",
-    "url": "https://github.com/monai/clankers"
+    "url": "https://github.com/monai/skills"
   },
   "plugins": [
     {

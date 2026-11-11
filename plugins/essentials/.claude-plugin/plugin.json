@@ -4,13 +4,12 @@
   "description": "Bits and pieces for your clanker janker.",
   "author": {
     "name": "monai",
-    "url": "https://github.com/monai/clankers"
+    "url": "https://github.com/monai/skills"
   },
-  "homepage": "https://github.com/monai/clankers",
-  "repository": "https://github.com/monai/clankers",
+  "homepage": "https://github.com/monai/skills",
+  "repository": "https://github.com/monai/skills",
   "keywords": [
     "skills",
-    "sample",
     "clankers"
   ]
 }
