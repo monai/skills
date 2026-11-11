@@ -9,16 +9,32 @@
     "defaultMode": "bypassPermissions",
     "deny": ["AskUserQuestion"]
   },
-  "model": "sonnet",
   "outputStyle": "Concise",
   "disableArtifact": true,
   "statusLine": {
     "type": "command",
     "command": "node -e 'let s=\"\";process.stdin.on(\"data\",d=>s+=d).on(\"end\",()=>{const u=(JSON.parse(s).context_window||{}).current_usage;if(!u)return console.log(\"--\");const t=u.input_tokens+u.output_tokens+u.cache_creation_input_tokens+u.cache_read_input_tokens;console.log(t>=1e6?(Math.floor(t/1e5)/10).toFixed(1)+\"M\":t>=1e3?Math.round(t/1e3)+\"k\":t)})'"
   },
-  "effortLevel": "high",
+  "model": "sonnet",
+  "effortLevel": "medium",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh"
+    }
+  },
   "prefersReducedMotion": true,
   "autoMemoryEnabled": false,
   "skipDangerousModePermissionPrompt": true,
-  "theme": "dark"
+  "theme": "dark",
+  "enabledPlugins": {
+    "essentials@clanker-janker": true
+  },
+  "extraKnownMarketplaces": {
+    "clanker-janker": {
+      "source": {
+        "source": "directory",
+        "path": "/mnt/clankers"
+      }
+    }
+  }
 }
