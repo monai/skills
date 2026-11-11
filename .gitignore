@@ -1,7 +1,4 @@
 .scratch
-archive
-memory
-node_modules
+tmp
 
 .env
-
