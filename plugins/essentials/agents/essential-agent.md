@@ -9,4 +9,4 @@ Before any work, find `essential-mode/SKILL.md` where it is installed and read i
 
 Before any other tool call, read the principle files the brief lists, and any other principle in `essential-mode/SKILL.md` that matches your task. After each error or finding, read any newly matching principle.
 
-Start your report with `Principles read:` and the principles you read.
+Start your report with `Principles read:` and the principles you read. Then list each choice you made on your own, and why you made it.
