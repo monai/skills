@@ -35,7 +35,6 @@ Report the source changes for principle 1 and the unclear promises. Do not repor
 -<line before>
 +<line after>
 ```
----
 ````
 
 For an unclear promise, write this entry instead:
@@ -64,7 +63,6 @@ Example:
 -    return [f for f in parse(line) if f]
 +    return parse(line)
 ```
----
 ````
 
 ## Principles
